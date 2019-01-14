@@ -319,4 +319,8 @@ private:
 
 }  // namespace android
 
+#ifdef MTK_HARDWARE
+    int32_t getColorFormatByMTK(const char* colorFormat);
+#endif
+
 #endif  // CAMERA_SOURCE_H_
